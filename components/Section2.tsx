@@ -5,16 +5,16 @@ import Card2 from './Products';
 export default function index(): JSX.Element {
   return (
     <ReactLenis root>
-      <main className='bg-black'>
+      <main className=''>
         <div className='wrapper'>
-          <section className='text-white  h-screen  w-full bg-slate-950  grid place-content-center sticky top-0'>
-            <div className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
+          <section className='text-white  h-screen  w-full  grid place-content-center sticky top-0'>
+            <div className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
 
-            <h1 className='2xl:text-7xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
-              Create Gallery In a Better Way
-              <br />
-              Using CSS sticky properties <br />
-              Scroll down! 👇
+            <h1 className='2xl:text-[150px] text-[#ff0000] text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
+             May Bargain, Araw-Araw
+            </h1>
+            <h1 className='2xl:text-[150px] text-[#ff0000] text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
+              Aton guid ini!
             </h1>
           </section>
         </div>
@@ -87,6 +87,7 @@ export default function index(): JSX.Element {
                   className='transition-all duration-300 h-full w-full  align-bottom object-cover rounded-md '
                 />
               </figure>
+              
             </div>
             {/* right part */}
             <div className='grid gap-2 col-span-4'>
