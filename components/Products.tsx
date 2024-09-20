@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
-function Card2() {
+
+type CardProps = {
+  name?: string;
+  price?: string;
+  url?: string;
+};
+
+const Card2 = ({ name, price, url }: CardProps) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -11,8 +18,8 @@ function Card2() {
   };
 
   return (
-    <div className='w-full mx-auto '>
-      <div className='dark:bg-white bg-gray-50 border dark:border-none  rounded-2xl'>
+    <div className='w-[300px] h-[400px]  mx-auto relative border border-[#ff0000] rounded-md '>
+      <div className='dark:bg-white justify-center bg-gray-50  dark:border-none  rounded-2xl'>
         <div className='w-full h-56 relative'>
           <motion.button
             className='absolute top-2 right-3 z-20 text-2xl text-white'
@@ -31,19 +38,17 @@ function Card2() {
             )}
           </motion.button>
           <Image
-            src={
-              'https://res.cloudinary.com/dzl9yxixg/image/upload/v1714372227/usama-akram-kP6knT7tjn4-unsplash_xm8rmu.jpg'
-            }
+            src={url ?? ""}
             alt='shoes'
             width={1000}
             height={1000}
-            className={`h-56 w-full rounded-2xl object-cover `}
+            className={`w-full rounded-2xl object-cover `}
           />
         </div>
-        <article className='text-black space-y-2 p-2 pb-3'>
+        <article className='text-black space-y-2 p-2 pb-3 absolute bottom-0 w-full'>
           <div className='flex justify-between'>
-            <h1 className='font-semibold text-xl text-base-dark'>Nike Air Max</h1>
-            <span className='font-medium text-xl text-base-dark'>$394</span>
+            <h1 className='font-semibold text-xl text-base-dark'>{name}</h1>
+            <span className='font-medium text-xl text-base-dark'>{`${price}PHP`}</span>
           </div>
           <p className='text-xs  text-black'>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
 
@@ -54,6 +59,6 @@ function Card2() {
       </div>
     </div>
   );
-}
+};
 
 export default Card2;

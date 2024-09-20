@@ -5,23 +5,23 @@ const items = [
   {
     id: '1',
     url: '/images/sm-1.jpg',
-    title: 'Adrian Paul',
-    description: 'COO & Co-Founder',
+    title: 'September 13',
+    description: 'Anniversary Sale',
     tags: ['Floral', 'Highlands', 'Wildflowers', 'Colorful', 'Resilience'],
   },
 
   {
     id: '2',
     url: '/images/sm-2.jpg',
-    title: 'Flualy Cual',
-    description: 'Founder & CEO',
+    title: 'September 13',
+    description: 'Anniversary Sale',
     tags: ['Twilight', 'Peaks', 'Silhouette', 'Evening Sky', 'Peaceful'],
   },
   {
     id: '3',
     url: '/images/sm-3.jpg',
-    title: 'Naymur Rahman',
-    description: 'CTO & Co-Founder',
+    title: 'May 31 - October 29',
+    description: 'Avanza Bonanza',
     tags: ['Rocky', 'Ridges', 'Contrast', 'Adventure', 'Clouds'],
   },
 ];
@@ -37,7 +37,7 @@ function Discount() {
               
             >
               <a
-                className='absolute bottom-0 text-black w-full  z-10  p-3 flex flex-col h-[100px] justify-end group-hover:backdrop-blur-sm'
+                className='absolute bottom-0 text-[#ff0000] w-full  z-10  p-3 flex flex-col h-[100px] justify-end group-hover:bg-white group-hover:bg-opacity-70'
                 href='#0'
               >
                 <h1 className=' text-xl font-medium   md:whitespace-nowrap md:truncate md:opacity-0 group-hover/article:opacity-100 group-focus-within/article:opacity-100 md:translate-y-2 group-hover/article:translate-y-0 group-focus-within/article:translate-y-0 transition duration-200 ease-[cubic-bezier(.5,.85,.25,1.8)] group-hover/article:delay-300 group-focus-within/article:delay-300'>
