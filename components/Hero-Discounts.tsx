@@ -1,5 +1,5 @@
 // https://cruip.com/create-an-image-accordion-with-tailwind/
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
 const items = [
   {
