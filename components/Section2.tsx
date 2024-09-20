@@ -61,23 +61,42 @@ export default function index(): JSX.Element {
   return (
     <ReactLenis root>
       <main className=''>
-        <div className='wrapper'>
-          <section className='bg-[url(/images/sm-bg.webp)] text-white  h-screen  w-full  grid place-content-center sticky top-0 bg-opacity-100 bg-black'>
-            <div className='absolute inset-0 bg-black opacity-60'></div>
-            <div className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
+        <div className='overflow-hidden whitespace-nowrap my-[40px]'>
+          <div className='animate-marquee flex w-full items-center gap-x-6 flex-row'>
+            <img src='/images/sm-logo-1.png' alt='' className='h-[70px]' />
+            <text className='text-[#ff0000] font-bold text-5xl'>
+              MAY BARGAIN ARAW-ARAW,ATON GUID INI
+            </text>
 
-            <h1 className='2xl:text-[150px] text-[#ff0000] text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
-              May Bargain, Araw-Araw
-            </h1>
-            <h1 className='2xl:text-[150px] text-[#ffffff] text-5xl px-8 font-semibold text-center tracking-tight leading-[120%] capitalize  z-20'>
-              Aton guid ini!
-            </h1>
-          </section>
+            <img src='/images/sm-logo-1.png' alt='' className='h-[70px]' />
+            <text className='text-[#ff0000] font-bold text-5xl'>
+              MAY BARGAIN ARAW-ARAW,ATON GUID INI
+            </text>
+            <img src='/images/sm-logo-1.png' alt='' className='h-[70px]' />
+            <text className='text-[#ff0000] font-bold text-5xl'>
+              MAY BARGAIN ARAW-ARAW,ATON GUID INI
+            </text>
+            <img src='/images/sm-logo-1.png' alt='' className='h-[70px]' />
+            <text className='text-[#ff0000] font-bold text-5xl'>
+              MAY BARGAIN ARAW-ARAW,ATON GUID INI
+            </text>
+            <img src='/images/sm-logo-1.png' alt='' className='h-[70px]' />
+
+            {/* <span className='text-red-600 font-bold text-5xl'>
+              Shop now!
+              <img src='/images/sm-logo-1.png' alt='' className='h-[40px]' />
+            </span>
+
+            <span className='text-red-600 font-bold text-5xl'>
+              Shop now!
+              <img src='/images/sm-logo-1.png' alt='' className='h-[40px]' />
+            </span>
+
+            <span className='text-red-600 font-bold text-5xl'>Shop now! </span> */}
+          </div>
         </div>
-
-        <section className='text-white   w-full'>
+        <section className='text-white mb-28  w-full'>
           <div className='grid grid-cols-12 gap-2'>
-            
             {/* left part */}
             <div className='grid gap-2 col-span-4'>
               {products.slice(0, 5).map((product, i) => (
@@ -129,11 +148,12 @@ export default function index(): JSX.Element {
           </div>
         </section>
 
-        <footer className='group bg-slate-950 '>
-          <h1 className='text-[16vw]  translate-y-20 leading-[100%] uppercase font-semibold text-center bg-gradient-to-r from-gray-400 to-gray-800 bg-clip-text text-transparent transition-all ease-linear'>
-            ui-layout
-          </h1>
-          <div className='bg-black h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full'></div>
+        <footer className='flex justify-between h-[200px] px-[150px] bg-[#ff0000] items-center py-[40px]'>
+          <div className='flex-col justify-between items-center h-full text-white'>
+            <p>HOME</p>
+            <p>ABOUT US</p>
+            <p>CONTACT US</p>
+          </div>
         </footer>
       </main>
     </ReactLenis>

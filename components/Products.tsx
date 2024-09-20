@@ -45,7 +45,7 @@ const Card2 = ({ name, price, url }: CardProps) => {
             className={`w-full rounded-2xl object-cover `}
           />
         </div>
-        <article className='text-black space-y-2 p-2 pb-3 absolute bottom-0 w-full'>
+        <article className='text-black space-y-2 p-2 pb-3 absolute pt-4 bottom-0 w-full'>
           <div className='flex justify-between'>
             <h1 className='font-semibold text-xl text-base-dark'>{name}</h1>
             <span className='font-medium text-xl text-base-dark'>{`${price}PHP`}</span>
