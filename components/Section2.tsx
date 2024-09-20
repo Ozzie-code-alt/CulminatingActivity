@@ -154,6 +154,7 @@ export default function index(): JSX.Element {
             <p>ABOUT US</p>
             <p>CONTACT US</p>
           </div>
+          <img src='/images/logo-white.png' alt='' className='h-[40px]' />
         </footer>
       </main>
     </ReactLenis>

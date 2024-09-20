@@ -18,7 +18,7 @@ const Card2 = ({ name, price, url }: CardProps) => {
   };
 
   return (
-    <div className='w-[300px] h-[400px]  mx-auto relative border border-[#ff0000] rounded-md '>
+    <div className='w-[300px] h-[400px]  mx-auto relative border border-slate-500 rounded-md '>
       <div className='dark:bg-white justify-center bg-gray-50  dark:border-none  rounded-2xl'>
         <div className='w-full h-56 relative'>
           <motion.button
@@ -52,7 +52,7 @@ const Card2 = ({ name, price, url }: CardProps) => {
           </div>
           <p className='text-xs  text-black'>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
 
-          <button className='w-full hover:text-white flex justify-center items-center gap-2 border-black border-2 text-black hover:bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#3e5068] to-[#0c1970] py-2  rounded-md'>
+          <button className='w-full hover:text-white flex justify-center items-center gap-2 p-3 rounded-md border-black border-2 text-black hover:bg-[#ff0000]'>
             Add to cart
           </button>
         </article>
