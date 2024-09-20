@@ -9,18 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.27",
+    "embla-carousel": "^8.3.0",
+    "embla-carousel-autoplay": "^8.3.0",
+    "embla-carousel-class-names": "^8.3.0",
+    "embla-carousel-react": "^8.3.0",
+    "framer-motion": "^11.5.5",
+    "lenis": "^1.1.13",
+    "lucide-react": "^0.441.0",
+    "motion": "^10.18.0",
+    "next": "14.2.13",
+    "prettier": "^3.3.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "vaul": "^0.9.4"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.13"
-  }
+    "typescript": "^5"
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
